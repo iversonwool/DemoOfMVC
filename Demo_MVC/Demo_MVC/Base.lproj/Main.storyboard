@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1bX-XX-fyu">
+                                <rect key="frame" x="157.5" y="64" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="54p-QI-hfs"/>
+                                    <constraint firstAttribute="width" constant="60" id="etO-OK-JSZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="牛小花" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHZ-iv-Zxe">
+                                <rect key="frame" x="161.5" y="134" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="作品：8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGq-C5-coc">
+                                <rect key="frame" x="70" y="170" width="162" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="好友：8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9X-TN-JTQ">
+                                <rect key="frame" x="242" y="170" width="63" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="B9U-3H-q2D">
+                                <rect key="frame" x="0.0" y="197" width="375" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="HYN-pa-Cp0"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="已发布"/>
+                                    <segment title="草稿箱"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B9X-TN-JTQ" secondAttribute="trailing" constant="70" id="3Rd-0V-X7k"/>
+                            <constraint firstItem="mHZ-iv-Zxe" firstAttribute="top" secondItem="1bX-XX-fyu" secondAttribute="bottom" constant="10" id="ERB-cc-Nii"/>
+                            <constraint firstItem="mHZ-iv-Zxe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I6D-Im-Ysy"/>
+                            <constraint firstItem="B9U-3H-q2D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ixw-pi-pgK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B9U-3H-q2D" secondAttribute="trailing" id="LZf-ri-r0s"/>
+                            <constraint firstItem="B9X-TN-JTQ" firstAttribute="leading" secondItem="RGq-C5-coc" secondAttribute="trailing" priority="750" constant="10" id="VUI-an-yty"/>
+                            <constraint firstItem="RGq-C5-coc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="Vza-Lq-bvd"/>
+                            <constraint firstItem="B9X-TN-JTQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="ZJp-44-fgE"/>
+                            <constraint firstItem="B9U-3H-q2D" firstAttribute="top" secondItem="RGq-C5-coc" secondAttribute="bottom" constant="6" id="j07-We-8T9"/>
+                            <constraint firstItem="RGq-C5-coc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="pXB-Ae-tNp"/>
+                            <constraint firstItem="1bX-XX-fyu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="qGY-CK-hWT"/>
+                            <constraint firstItem="1bX-XX-fyu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xjH-5u-VsP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="avatarImgView" destination="1bX-XX-fyu" id="6u9-i9-d1E"/>
+                        <outlet property="segmentedControl" destination="B9U-3H-q2D" id="xJu-Tx-a10"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-36" y="-66"/>
+        </scene>
+    </scenes>
+</document>
