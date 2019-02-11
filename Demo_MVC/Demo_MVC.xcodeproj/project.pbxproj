@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D4C3FB7F21FA91C600CC3691 /* BlogTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C3FB7D21FA91C600CC3691 /* BlogTableViewCell.m */; };
+		D4C3FB8021FA91C600CC3691 /* BlogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4C3FB7E21FA91C600CC3691 /* BlogTableViewCell.xib */; };
+		D4C3FB8321FA940100CC3691 /* TableViewCellHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C3FB8221FA940100CC3691 /* TableViewCellHelper.m */; };
 		D4F4998921F997D0004CEAF2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F4998821F997D0004CEAF2 /* AppDelegate.m */; };
 		D4F4998C21F997D0004CEAF2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F4998B21F997D0004CEAF2 /* ViewController.m */; };
 		D4F4998F21F997D0004CEAF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4F4998D21F997D0004CEAF2 /* Main.storyboard */; };
@@ -18,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D4C3FB7C21FA91C600CC3691 /* BlogTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlogTableViewCell.h; sourceTree = "<group>"; };
+		D4C3FB7D21FA91C600CC3691 /* BlogTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlogTableViewCell.m; sourceTree = "<group>"; };
+		D4C3FB7E21FA91C600CC3691 /* BlogTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlogTableViewCell.xib; sourceTree = "<group>"; };
+		D4C3FB8121FA940100CC3691 /* TableViewCellHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCellHelper.h; sourceTree = "<group>"; };
+		D4C3FB8221FA940100CC3691 /* TableViewCellHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCellHelper.m; sourceTree = "<group>"; };
 		D4F4998421F997D0004CEAF2 /* Demo_MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo_MVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4F4998721F997D0004CEAF2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D4F4998821F997D0004CEAF2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,6 +80,11 @@
 				D4F4999E21F9B398004CEAF2 /* BlogTableViewHelper.m */,
 				D4F499A021F9B5AE004CEAF2 /* UserApiManager.h */,
 				D4F499A121F9B5AE004CEAF2 /* UserApiManager.m */,
+				D4C3FB8121FA940100CC3691 /* TableViewCellHelper.h */,
+				D4C3FB8221FA940100CC3691 /* TableViewCellHelper.m */,
+				D4C3FB7C21FA91C600CC3691 /* BlogTableViewCell.h */,
+				D4C3FB7D21FA91C600CC3691 /* BlogTableViewCell.m */,
+				D4C3FB7E21FA91C600CC3691 /* BlogTableViewCell.xib */,
 				D4F4998D21F997D0004CEAF2 /* Main.storyboard */,
 				D4F4999021F997D2004CEAF2 /* Assets.xcassets */,
 				D4F4999221F997D2004CEAF2 /* LaunchScreen.storyboard */,
@@ -139,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4F4999421F997D2004CEAF2 /* LaunchScreen.storyboard in Resources */,
+				D4C3FB8021FA91C600CC3691 /* BlogTableViewCell.xib in Resources */,
 				D4F4999121F997D2004CEAF2 /* Assets.xcassets in Resources */,
 				D4F4998F21F997D0004CEAF2 /* Main.storyboard in Resources */,
 			);
@@ -154,6 +168,8 @@
 				D4F4998C21F997D0004CEAF2 /* ViewController.m in Sources */,
 				D4F499A221F9B5AE004CEAF2 /* UserApiManager.m in Sources */,
 				D4F4999721F997D2004CEAF2 /* main.m in Sources */,
+				D4C3FB8321FA940100CC3691 /* TableViewCellHelper.m in Sources */,
+				D4C3FB7F21FA91C600CC3691 /* BlogTableViewCell.m in Sources */,
 				D4F4998921F997D0004CEAF2 /* AppDelegate.m in Sources */,
 				D4F4999F21F9B398004CEAF2 /* BlogTableViewHelper.m in Sources */,
 			);

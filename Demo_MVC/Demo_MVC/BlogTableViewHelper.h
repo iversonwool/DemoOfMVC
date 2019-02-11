@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)helperWithTableView:(UITableView *)tableView userID:(NSString *)userID;
 
-//- (void)fetchDataWithCompletionHandler:(
+- (void)fetchDataWithCompletionHandler:(void (^)(NSError *, id data))completionHandler;
 
 //- (void)setVCGenerator:(
 

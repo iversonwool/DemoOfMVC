@@ -54,10 +54,15 @@
                                     <segment title="草稿箱"/>
                                 </segments>
                             </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Pb-Nl-PGV">
+                                <rect key="frame" x="0.0" y="229" width="375" height="438"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B9X-TN-JTQ" secondAttribute="trailing" constant="70" id="3Rd-0V-X7k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8Pb-Nl-PGV" secondAttribute="bottom" id="4Ml-RA-Iae"/>
                             <constraint firstItem="mHZ-iv-Zxe" firstAttribute="top" secondItem="1bX-XX-fyu" secondAttribute="bottom" constant="10" id="ERB-cc-Nii"/>
                             <constraint firstItem="mHZ-iv-Zxe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I6D-Im-Ysy"/>
                             <constraint firstItem="B9U-3H-q2D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ixw-pi-pgK"/>
@@ -65,9 +70,12 @@
                             <constraint firstItem="B9X-TN-JTQ" firstAttribute="leading" secondItem="RGq-C5-coc" secondAttribute="trailing" priority="750" constant="10" id="VUI-an-yty"/>
                             <constraint firstItem="RGq-C5-coc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="Vza-Lq-bvd"/>
                             <constraint firstItem="B9X-TN-JTQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="ZJp-44-fgE"/>
+                            <constraint firstItem="8Pb-Nl-PGV" firstAttribute="top" secondItem="B9U-3H-q2D" secondAttribute="bottom" constant="5" id="cqW-fP-IqM"/>
                             <constraint firstItem="B9U-3H-q2D" firstAttribute="top" secondItem="RGq-C5-coc" secondAttribute="bottom" constant="6" id="j07-We-8T9"/>
+                            <constraint firstItem="8Pb-Nl-PGV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kr4-3Z-vQX"/>
                             <constraint firstItem="RGq-C5-coc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="pXB-Ae-tNp"/>
                             <constraint firstItem="1bX-XX-fyu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="qGY-CK-hWT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Pb-Nl-PGV" secondAttribute="trailing" id="x2i-qN-0Re"/>
                             <constraint firstItem="1bX-XX-fyu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xjH-5u-VsP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -75,6 +83,7 @@
                     <connections>
                         <outlet property="avatarImgView" destination="1bX-XX-fyu" id="6u9-i9-d1E"/>
                         <outlet property="segmentedControl" destination="B9U-3H-q2D" id="xJu-Tx-a10"/>
+                        <outlet property="tableView" destination="8Pb-Nl-PGV" id="YNd-3S-OcV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
